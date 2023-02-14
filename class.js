@@ -24,3 +24,5 @@ class PremiumAccount extends Account {
 }
 
 console.log(Account.register(900));
+
+TEST1;
