@@ -18,7 +18,11 @@
 /(t|T)he/g `match lowercase "t" or uppercase "T" and then "he and "`
 
 /(t|T){2, 3}he/g `match 2-2 lowercase "t" or uppercase "T"s and then "he and "`
-/(e){2, 3}he/g `match 2-3 letter "e",
+/(e){2, 3}he/g `match 2-3 letter "e"`
 
-/^T/ = `Matches "T"
+/^T/g  `match "t" if its the first chracter of string.`
+/^T/gm  `match "t" if its the first chracter of each line.`
+/\.$/g  `match "." if its the last chracter of string.`
+/\.$/gm  `match "." if its the last chracter of each line.`
+
 `The fat cat ran down the street, It was searching for a mouse eat.`
