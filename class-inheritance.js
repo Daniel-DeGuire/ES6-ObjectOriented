@@ -1,4 +1,3 @@
-a;
 <!DOCTYPE html>
 <html>
 <body>
@@ -10,27 +9,27 @@ a;
 <p id="demo"></p>
 
 <script>
-class Car {
-  constructor(brand) {
-    this.carname = brand;
+class Dearlership {
+  constructor(name) {
+    this.dealership = name;
   }
   present() {
-    return 'I have a ' + this.carname;
+    return 'I have a ' + this.dealership;
   }
 }
 
-class Model extends Car {
-  constructor(brand, mod) {
-    super(brand);
-    this.model = mod;
+class City extends Dearlership {
+  constructor(dealership, mod) {
+    super(dealership);
+    this.city = mod;
   }
   show() {
-    return this.present() + ', it is a ' + this.model;
+    return this.present() + ', it is a ' + this.city;
   }
 }
 
-const myCar = new Model("Ford", "Mustang");
-document.getElementById("demo").innerHTML = myCar.show();
+const myDealership = new City("Suntrup", "Sunset Hills");
+document.getElementById("demo").innerHTML = myDealership.show();
 </script>
 
 </body>
